@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>Cowbell Bot</title>
+
+    <script>
+        window.Polymer = window.Polymer || {};
+        window.Polymer.dom = 'shadow';
+        function fixDevToolsBug() {
+            requestAnimationFrame(fixDevToolsBug)
+            var nodes = document.querySelectorAll('head style')
+            for (var i = 0; i < nodes.length; ++i) {
+                if (nodes[i].innerHTML.match('html /deep/ *')) {
+                    nodes[i].parentNode.removeChild(nodes[i])
+                }
+            }
+        }
+        fixDevToolsBug();
+    </script>
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="cowbell-home.html">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <cowbell-home></cowbell-home>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "cowbell-bot",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "debug": "electron . --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synth3tk/cowbell-bot.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "devtron": "1.4.0"
+  },
+  "dependencies": {
+    "beam-client-node": "^0.11.0",
+    "beam-interactive-node": "^0.3.2",
+    "node-hue-api": "^2.4.1"
+  },
+  "description": "A Beam.pro integration which allows viewers to control Hue lights.",
+  "bugs": {
+    "url": "https://github.com/synth3tk/cowbell-bot/issues"
+  },
+  "homepage": "https://github.com/synth3tk/cowbell-bot#readme",
+  "author": "David Thomas <dev@synth3.tk>"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "cowbell-bot",
+  "private": true,
+  "dependencies": {
+    "app-layout": "0.10.6",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7",
+    "polymer": "Polymer/polymer#^1.8.0",
+    "iron-elements": "PolymerElements/iron-elements#^1.0.10"
+  },
+  "homepage": "https://github.com/synth3tk/cowbell-bot",
+  "authors": [
+    "David Thomas <dev@synth3.tk>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
